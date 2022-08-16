@@ -48,6 +48,10 @@
           border-radius: 5px;
           cursor: auto;
         }
+        &.disabled {
+          pointer-events: none;
+          opacity: 0.4;
+        }
       }
     }
   }

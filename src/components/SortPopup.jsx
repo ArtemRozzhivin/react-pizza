@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 
-function SortPopap({ items }) {
+function SortPopup({ items }) {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
-  const activeName = items[activeItem];
+  const activeName = items[activeItem].name;
   const sortRef = useRef();
 
   const toggleVisiblePopup = () => {
@@ -52,9 +52,9 @@ function SortPopap({ items }) {
                 <li
                   onClick={() => changeActiveItem(index)}
                   className={activeItem === index ? 'active' : ''}
-                  key={`${item}_${index}`}
+                  key={`${item.type}_${index}`}
                 >
-                  {item}
+                  {item.name}
                 </li>
               ))}
           </ul>
@@ -64,4 +64,4 @@ function SortPopap({ items }) {
   );
 }
 
-export default SortPopap;
+export default SortPopup;
