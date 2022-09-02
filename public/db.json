@@ -6,7 +6,7 @@
       "name": "Пепперони Фреш с перцем",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 803,
+      "price": 400,
       "category": 0,
       "rating": 4
     },
@@ -16,7 +16,7 @@
       "name": "Сырная",
       "types": [0],
       "sizes": [26, 40],
-      "price": 245,
+      "price": 152,
       "category": 1,
       "rating": 6
     },
@@ -26,8 +26,8 @@
       "name": "Цыпленок барбекю",
       "types": [0],
       "sizes": [26, 40],
-      "price": 295,
-      "category": 1,
+      "price": 184,
+      "category": 2,
       "rating": 4
     },
     {
@@ -36,8 +36,8 @@
       "name": "Кисло-сладкий цыпленок",
       "types": [1],
       "sizes": [26, 30, 40],
-      "price": 275,
-      "category": 2,
+      "price": 171,
+      "category": 0,
       "rating": 2
     },
     {
@@ -46,7 +46,7 @@
       "name": "Чизбургер-пицца",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 415,
+      "price": 259,
       "category": 3,
       "rating": 8
     },
@@ -56,8 +56,8 @@
       "name": "Крэйзи пепперони",
       "types": [0],
       "sizes": [30, 40],
-      "price": 580,
-      "category": 2,
+      "price": 362,
+      "category": 3,
       "rating": 2
     },
     {
@@ -66,8 +66,8 @@
       "name": "Пепперони",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 675,
-      "category": 1,
+      "price": 400,
+      "category": 0,
       "rating": 9
     },
     {
@@ -76,8 +76,8 @@
       "name": "Маргарита",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 450,
-      "category": 4,
+      "price": 280,
+      "category": 1,
       "rating": 10
     },
     {
@@ -86,8 +86,8 @@
       "name": "Четыре сезона",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 395,
-      "category": 5,
+      "price": 246,
+      "category": 4,
       "rating": 10
     },
     {
@@ -96,8 +96,8 @@
       "name": "Овощи и грибы 🌱",
       "types": [0, 1],
       "sizes": [26, 30, 40],
-      "price": 285,
-      "category": 5,
+      "price": 177,
+      "category": 1,
       "rating": 7
     }
   ]

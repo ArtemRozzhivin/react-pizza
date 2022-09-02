@@ -6,7 +6,12 @@
   margin-bottom: 65px;
 
   &:not(:nth-of-type(4n)) {
-    margin-right: 35px;
+    margin-right: 3.7%;
+  }
+
+  &__loading {
+    margin-right: 2.5%;
+    margin-bottom: 5%;
   }
 
   &__image {
