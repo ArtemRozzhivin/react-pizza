@@ -62,10 +62,6 @@ function Header() {
               <span>{totalCount}</span>
             </MyButton>
           </Link>
-
-          {/* <a href="/cart.html" className="button button--cart">
-            
-          </a> */}
         </div>
       </div>
     </div>

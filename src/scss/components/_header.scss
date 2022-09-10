@@ -29,4 +29,33 @@
       color: #7b7b7b;
     }
   }
+  @media (max-width: 680px) {
+    padding: 20px 0px;
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 500px) {
+    p {
+      display: none;
+    }
+    &__logo {
+      align-items: center;
+    }
+  }
+  @media (max-width: 430px) {
+    .container {
+      flex-wrap: wrap;
+      flex: 1 1 100%;
+    }
+    &__cart {
+      flex: 0 0 100%;
+    }
+    &__logo {
+      margin: 0px 0px 15px 0px;
+    }
+  }
 }

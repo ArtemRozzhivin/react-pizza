@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import MyButton from './MyButton';
 
 function CartItem({
@@ -23,13 +25,13 @@ function CartItem({
 
   return (
     <div className="cart__item">
-      <div className="cart__item-img">
+      <div className="cart__item-image">
         <img
-          className="pizza-block__image"
           src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
           alt="Pizza"
         />
       </div>
+
       <div className="cart__item-info">
         <h3>{name}</h3>
         <p>
@@ -109,5 +111,17 @@ function CartItem({
     </div>
   );
 }
+
+CartItem.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  size: PropTypes.number,
+  idTotalPrice: PropTypes.number,
+  idTotalCount: PropTypes.number,
+  removePizzas: PropTypes.func,
+  plusPizza: PropTypes.func,
+  minusPizza: PropTypes.func,
+};
 
 export default CartItem;

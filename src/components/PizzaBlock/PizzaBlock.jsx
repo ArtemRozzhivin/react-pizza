@@ -42,7 +42,9 @@ function PizzaBlock({
 
   return (
     <div className="pizza-block">
-      <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
+      <div className="pizza-block__image">
+        <img src={imageUrl} alt="Pizza" />
+      </div>
       <h4 className="pizza-block__title">{name}</h4>
       <div className="pizza-block__selector">
         <ul>
@@ -98,6 +100,7 @@ function PizzaBlock({
 }
 
 PizzaBlock.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
@@ -106,7 +109,5 @@ PizzaBlock.propTypes = {
   onClickAddPizzaToCart: PropTypes.func.isRequired,
   addedToCart: PropTypes.number,
 };
-
-PizzaBlock.defaultProps = {};
 
 export default PizzaBlock;

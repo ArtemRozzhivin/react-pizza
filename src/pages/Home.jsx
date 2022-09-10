@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { fetchPizzas, setLoaded } from '../redux/actions/pizzas';
+import { fetchPizzas } from '../redux/actions/pizzas';
 
 import { Categories, SortPopup, PizzaBlock, PizzaLoadingBlock } from '../components';
 import { setCategory, setSortBy } from '../redux/actions/filters';
@@ -31,15 +31,21 @@ function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchPizzas(category, sortBy));
-  }, [category, sortBy]);
+  }, [category, sortBy, dispatch]);
 
-  const onSelectCaterory = useCallback((index) => {
-    dispatch(setCategory(index));
-  }, []);
+  const onSelectCaterory = useCallback(
+    (index) => {
+      dispatch(setCategory(index));
+    },
+    [dispatch],
+  );
 
-  const onSelectSortBy = useCallback((index) => {
-    dispatch(setSortBy(index));
-  }, []);
+  const onSelectSortBy = useCallback(
+    (index) => {
+      dispatch(setSortBy(index));
+    },
+    [dispatch],
+  );
 
   function onClickAddPizzaToCart(obj) {
     dispatch(setPizzaToCart(obj));

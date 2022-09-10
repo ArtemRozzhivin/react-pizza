@@ -1,12 +1,27 @@
 @import '../_variables';
 
 .pizza-block {
-  width: 280px;
   text-align: center;
   margin-bottom: 65px;
 
-  &:not(:nth-of-type(4n)) {
-    margin-right: 3.7%;
+  padding: 0px 25px;
+  flex: 0 0 25%;
+  position: relative;
+
+  @media (max-width: 1350px) {
+    flex: 0 0 33.333%;
+  }
+
+  @media (max-width: 1050px) {
+    flex: 0 0 50%;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0px 10px;
+  }
+
+  @media (max-width: 650px) {
+    flex: 0 0 100%;
   }
 
   &__loading {
@@ -15,7 +30,18 @@
   }
 
   &__image {
-    width: 260px;
+    position: relative;
+    padding: 0px 0px 100% 0px;
+    margin: 0px 0px 20px 0px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__title {
@@ -73,5 +99,8 @@
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.015em;
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
   }
 }

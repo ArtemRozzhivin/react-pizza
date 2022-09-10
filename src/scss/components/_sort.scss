@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 1300px) {
+      margin: 20px 0px 0px 0px;
+    }
+
     svg {
       margin-right: 8px;
       transform: rotate(180deg);
@@ -36,6 +40,7 @@
     overflow: hidden;
     padding: 10px 0;
     width: 160px;
+    z-index: 2;
 
     ul {
       overflow: hidden;

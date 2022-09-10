@@ -3,6 +3,13 @@
 .categories {
   ul {
     display: flex;
+    @media (max-width: 990px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        margin: 10px 0px 0px 0px;
+      }
+    }
 
     li {
       background-color: #f9f9f9;
